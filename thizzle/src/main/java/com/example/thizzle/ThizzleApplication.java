@@ -1,0 +1,21 @@
+package com.example.thizzle;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.stereotype.Controller;
+import org.apache.log4j.Logger;
+
+@Configuration
+@EnableAutoConfiguration
+@ComponentScan("com.example")
+
+public class ThizzleApplication {
+	
+	static Logger log = Logger.getLogger(ThizzleApplication.class.getName());
+
+	public static void main(String[] args) {
+		SpringApplication.run(ThizzleApplication.class, args);
+	}
+}
