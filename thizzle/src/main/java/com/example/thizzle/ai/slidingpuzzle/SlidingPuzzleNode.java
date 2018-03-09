@@ -1,4 +1,4 @@
-package com.example.ai.slidingpuzzle;
+package com.example.thizzle.ai.slidingpuzzle;
 
 import java.util.List;
 
