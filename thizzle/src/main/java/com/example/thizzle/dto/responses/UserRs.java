@@ -21,6 +21,10 @@ public class UserRs {
 		this.password = password;
 		this.gender = gender;
 	}
+
+	public UserRs(){
+
+	}
 	
 	
 	public Integer getUserid() {

@@ -22,7 +22,6 @@ public class SlidingPuzzleService {
 	}
 	
 	public Integer[][] randomizeBoard(){
-		Logger log = Logger.getLogger(ThizzleApplication.class.getName());
 		List<Integer> boardNumbers = new ArrayList<>();
 		for (int i = 0; i < 16; i++) {
 			boardNumbers.add(i);

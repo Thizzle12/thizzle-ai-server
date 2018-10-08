@@ -24,9 +24,7 @@ public class UserController {
 	
 	@Autowired
 	private TestProperties configs;
-	
-	@Autowired
-	
+
 	
 	
 	@ResponseBody
@@ -48,6 +46,11 @@ public class UserController {
 		return new ResponseEntity<String>("ok", HttpStatus.OK);
 	}
 	
-	
+	@ResponseBody
+	@RequestMapping(value="", method=RequestMethod.POST)
+	public HttpEntity<UserRs> create(){
+		UserRs response = new UserRs();
+		return new ResponseEntity<>(response, HttpStatus.OK);
+	}
 
 }
